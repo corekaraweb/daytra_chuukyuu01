@@ -32,6 +32,16 @@
         </button>
       </div>
     </header>
+    <div class="drawer-content">
+      <nav class="drawer-content__menu">
+        <a href="" class="drawer-content__link">サービスについて</a>
+        <a href="" class="drawer-content__link">使い方</a>
+        <a href="" class="drawer-content__link">メリット</a>
+        <div class="drawer-content__button">
+          <a href="" class="button">お問い合わせ</a>
+        </div>
+      </nav>
+    </div>
     <div class="mv">
       <div class="mv__inner">
         <div class="mv__content">
@@ -128,16 +138,7 @@
           <div class="heading__en">MOVIE</div>
           <div class="heading__ja">2秒で分かる！OHA!について</div>
           <div class="movie__iframe">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/4XTF16CcqPc?si=QcbyOHD3IWuw10nr"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/4XTF16CcqPc?si=QcbyOHD3IWuw10nr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
         </div>
       </div>
@@ -275,9 +276,7 @@
                     <div class="merit-box__number">1</div>
                     <div class="merit-box__title">通りすがりに猫が<br />挨拶してくれるようになる</div>
                   </h3>
-                  <div class="merit-box__text">
-                    偶然の可能性も高いですが、OHA!を使うようになってから、やたらと猫が挨拶してくれるようになった、というお話をいただきます。とはいえ、自惚れすぎてはいけません。挨拶されたからといって一方的に話しかけ続けてしまうと気まぐれ猫ちゃんにうんざりされる上に周りの目も冷ややかです。
-                  </div>
+                  <div class="merit-box__text">偶然の可能性も高いですが、OHA!を使うようになってから、やたらと猫が挨拶してくれるようになった、というお話をいただきます。とはいえ、自惚れすぎてはいけません。挨拶されたからといって一方的に話しかけ続けてしまうと気まぐれ猫ちゃんにうんざりされる上に周りの目も冷ややかです。</div>
                 </div>
               </div>
             </div>
@@ -323,6 +322,14 @@
         </div>
       </div>
     </section>
+    <div class="cta">
+      <div class="cta__inner inner">
+        <p class="cta__text">どうですか？<br class="hidden-pc" />早速今日から使ってみたくなりましたか？<br />でかほんと使って。お願い。</p>
+        <div class="cta__button">
+          <a href="" class="button">今すぐダウンロード</a>
+        </div>
+      </div>
+    </div>
     <div class="compare">
       <div class="compare__inner inner">
         <div class="compare__title">他のサービスとの違い</div>
@@ -384,12 +391,14 @@
                 </div>
               </div>
               <div class="contact__field">
-                <div class="form-field__head">
-                  <label for="your-email" class="form-field__label">メールアドレス</label>
-                  <span class="form-field__tag">必須</span>
-                </div>
-                <div class="form-field__item">
-                  <input type="email" name="" id="your-email" placeholder="info@oha.com" />
+                <div class="form-field">
+                  <div class="form-field__head">
+                    <label for="your-email" class="form-field__label">メールアドレス</label>
+                    <span class="form-field__tag">必須</span>
+                  </div>
+                  <div class="form-field__item">
+                    <input type="email" name="" id="your-email" placeholder="info@oha.com" />
+                  </div>
                 </div>
               </div>
               <div class="contact__field">
@@ -448,13 +457,26 @@
                   </div>
                 </div>
               </div>
-              <div class="contact__privacy">プライバシーポリシーに同意する</div>
-              <div class="contact__button">送信する</div>
+              <div class="contact__privacy">
+                <label class="form-checkbox">
+                  <input type="checkbox" class="form-checkbox__input" name="" id="" />
+                  <span class="form-checkbox__text"><a href="http://" target="_blank">プライバシーポリシー</a>に同意する</span>
+                </label>
+              </div>
+              <div class="contact__button">
+                <input type="submit" value="送信する" class="button" />
+              </div>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer__inner inner">
+        <small class="footer__copyright">COPYRIGHT 2023 株式会社デイトラ </small>
+      </div>
+    </footer>
+    <a href="#" class="pageTop"><img src="./img/pagetop-img.png" alt="" /></a>
     <script src="./js/script.js"></script>
   </body>
 </html>
