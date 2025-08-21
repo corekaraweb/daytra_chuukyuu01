@@ -21,6 +21,7 @@ const swiper = new Swiper("#js-gallery-swiper", {
   // If we need pagination
   pagination: {
     el: "#js-gallery-pagination",
+    clickable: true,
   },
 
   // Navigation arrows
